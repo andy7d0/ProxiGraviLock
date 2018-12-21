@@ -1,0 +1,66 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- NOTE: EditTextPreference accepts EditText attributes. -->
+    <!-- NOTE: EditTextPreference's summary should be set to its value by the activity code. -->
+
+    <!-- NOTE: Hide buttons to simplify the UI. Users can touch outside the dialog to
+         dismiss it. -->
+    <!-- NOTE: ListPreference's summary should be set to its value by the activity code. -->
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="pref_proximity_lock"
+        android:title="@string/pref_proximity_lock" />
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:dependency="pref_proximity_lock"
+        android:key="pref_head_down"
+        android:title="@string/pref_head_down"
+        android:summary="@string/in_poket"
+        />
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:dependency="pref_proximity_lock"
+        android:key="pref_face_down"
+        android:title="@string/pref_face_down"
+        android:summary="@string/in_poket"
+        />
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="pref_proximity_rotate"
+        android:title="@string/perf_proximity_rotate"
+        android:summary="by click on proximity sensor if the device oriented landscape"
+        />
+
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="pref_su"
+        android:title="@string/pref_su" />
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="pref_motion_wakeup"
+        android:title="@string/pref_motion_wakeup" />
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="pref_start_on_boot"
+        android:title="@string/pref_start_on_boot" />
+
+    <Preference
+        android:key="start_service"
+        android:title="@string/service_start" />
+
+    <Preference
+        android:key="sensor_test"
+        android:title="Test sensor" />
+
+    <Preference
+        android:key="dim_test"
+        android:title="Dim  screen" />
+
+</PreferenceScreen>
